@@ -1,0 +1,38 @@
+step 1. 
+take clone from the github
+
+step.2 
+  run this command => npm i 
+
+step 3. 
+to run locally project on your system 
+use this command =>
+ npm run dev / npm run start
+
+ step .4 
+  for database connection  follow 
+  .env.emample file  and create .env file on local system and copy the data which present on 
+  .env.emample file paste into your .env file
+
+  step.5 
+  to run the apis 
+ generate url 
+ http://localhost:4000/api/shorten
+ payload :
+
+ {
+    "url": "https://www.example.com/very/long/url/path"
+}
+
+step .6 
+redirect to origninal url 
+http://localhost:4000/api/b04bb2d0-499a-4a31-a101-1bf6ab83034d  use this end point
+and replace this id b04bb2d0-499a-4a31-a101-1bf6ab83034d   to your url generated id
+
+step. 7 
+error handling impmented  that means which end point is not exist it will throw a message 
+
+
+... also attached postman collection 
+
+

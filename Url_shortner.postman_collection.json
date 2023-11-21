@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "8791ea9d-c421-4341-98fd-4dcd14ea0fa6",
+		"name": "Url_shortner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "17695013"
+	},
+	"item": [
+		{
+			"name": "generateUrl",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\": \"https://www.example.com/very/long/url/path\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/api/shorten"
+			},
+			"response": []
+		},
+		{
+			"name": "redirectToOriginalUrl",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"originalUrl\":\"www.google.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/api/b04bb2d0-499a-4a31-a101-1bf6ab83034d"
+			},
+			"response": []
+		}
+	]
+}
